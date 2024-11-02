@@ -105,9 +105,6 @@ importers:
       esno:
         specifier: ^4.7.0
         version: 4.7.0
-      husky:
-        specifier: ^9.1.6
-        version: 9.1.6
       lint-staged:
         specifier: ^15.2.10
         version: 15.2.10
@@ -3695,11 +3692,6 @@ packages:
   human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
-
-  husky@9.1.6:
-    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
-    engines: {node: '>=18'}
-    hasBin: true
 
   icss-replace-symbols@1.1.0:
     resolution: {integrity: sha512-chIaY3Vh2mh2Q3RGXttaDIzeiPvaVXJ+C4DAh/w3c37SKZ/U6PGMmuicR2EQQp9bKG8zLMCl7I+PtIoOOPp8Gg==}
@@ -10406,8 +10398,6 @@ snapshots:
   http-cache-semantics@4.1.1: {}
 
   human-signals@5.0.0: {}
-
-  husky@9.1.6: {}
 
   icss-replace-symbols@1.1.0: {}
 

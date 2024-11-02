@@ -13,8 +13,7 @@
     "preview": "astro preview",
     "theme:release": "esno scripts/release-theme.ts",
     "theme:create": "esno scripts/create-post.ts",
-    "theme:update": "esno scripts/update-theme.ts",
-    "prepare": "husky"
+    "theme:update": "esno scripts/update-theme.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
@@ -51,7 +50,6 @@
     "eslint-plugin-astro": "^1.2.4",
     "eslint-plugin-format": "^0.1.2",
     "esno": "^4.7.0",
-    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "markdown-it": "^14.1.0",
     "prettier-plugin-astro": "^0.13.0",
