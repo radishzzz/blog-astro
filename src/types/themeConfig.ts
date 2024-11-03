@@ -54,15 +54,24 @@ export interface ConfigSEO {
 }
 
 export interface ConfigComment {
-  disqus?: Disqus;
-  giscus?: Giscus;
-  twikoo?: Twikoo;
-  waline?: {
-    serverURL: string;
-    path?: string;
-    lang?: string;
-    dark?: string;
-  };
+  disqus?: Disqus
+  giscus?: Giscus
+  twikoo?: Twikoo
+  waline?: Waline
+}
+
+interface Waline {
+  serverURL: string
+  path?: string
+  lang?: string
+  dark?: string
+  comment?: boolean
+  pageview?: boolean
+  emoji?: string[]
+  meta?: string[]
+  requiredMeta?: string[]
+  login?: string
+  locale?: Record<string, string>
 }
 
 export interface ConfigRSS {

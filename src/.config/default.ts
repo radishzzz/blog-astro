@@ -5,13 +5,30 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: 'radishzz',
-    subtitle: '',
-    author: 'radishzz',
-    description: 'Share my thoughts and ideas.',
-    website: 'https://radishzz.cc/',
+    title: '活版印字',
+    subtitle: 'Typography',
+    author: 'Moeyua',
+    description: 'Rediscory the beauty of typography',
+    website: 'https://astro-theme-typography.vercel.app/',
     pageSize: 5,
-    socialLinks: [],
+    socialLinks: [
+      {
+        name: 'github',
+        href: 'https://github.com/moeyua/astro-theme-typography',
+      },
+      {
+        name: 'rss',
+        href: '/atom.xml',
+      },
+      {
+        name: 'twitter',
+        href: 'https://github.com/moeyua/astro-theme-typography',
+      },
+      {
+        name: 'mastodon',
+        href: 'https://github.com/moeyua/astro-theme-typography',
+      },
+    ],
     navLinks: [
       {
         name: 'Posts',
@@ -32,20 +49,21 @@ export const defaultConfig: ThemeConfig = {
     ],
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
-      'Here\'s <a target="_blank" href="/atom.xml">RSS</a> and <a target="_blank" href="mailto:radishzz@yandex.com">Email</a>',
-      'Powered by <a target="_blank" href="https://astro.build/">Astro</a> and <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a>',
-      '© 2024 - %year %author',
+      '© %year <a target="_blank" href="%website">%author</a>',
+      'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
+      'Proudly published with <a target="_blank" href="https://astro.build/">Astro</a>',
     ],
   },
   appearance: {
+    theme: 'light',
     locale: 'zh-cn',
     colorsLight: {
-      primary: '#333333',
+      primary: '#2e405b',
       background: '#ffffff',
     },
     colorsDark: {
-      primary: '#e5e5e5',
-      background: '#1a1a1a',
+      primary: '#FFFFFF',
+      background: '#232222',
     },
     fonts: {
       header:
@@ -54,7 +72,7 @@ export const defaultConfig: ThemeConfig = {
     },
   },
   seo: {
-    twitter: '',
+    twitter: '@moeyua13',
     meta: [],
     link: [],
   },
@@ -63,15 +81,14 @@ export const defaultConfig: ThemeConfig = {
   },
   comment: {
     waline: {
-      serverUrl: 'https://comment.radishzz.cc',
+      serverURL: 'https://comment.radishzz.cc/',
       lang: 'zh-CN',
       emoji: '//unpkg.com/@waline/emojis@1.2.0/bmoji',
-      reaction: false
     }
   },
   analytics: {
     googleAnalyticsId: '',
-    umamiAnalyticsId: '67d360e0-09a8-4cc9-851c-ed26150d0c6b',
+    umamiAnalyticsId: '',
   },
   latex: {
     katex: false,
