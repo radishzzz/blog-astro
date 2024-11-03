@@ -6,9 +6,9 @@ import type { ThemeConfig } from '~/types'
 export const defaultConfig: ThemeConfig = {
   site: {
     title: 'radishzz',
-    subtitle: '',
+    subtitle: '走走停停',
     author: 'radishzz',
-    description: 'Share my thoughts and ideas.',
+    description: 'Walk and pause',
     website: 'https://radishzz.cc/',
     pageSize: 5,
     socialLinks: [],
