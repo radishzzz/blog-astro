@@ -54,5 +54,42 @@ const lang = themeConfig.appearance.locale ?? 'en-us'
         document.removeEventListener('animationend', removeAnimation, false)
       }
     </script>
+
+    <style>
+      /* 页面首次加载动画 */
+      html.animation-prepared .transition-swup-header,
+      html.animation-prepared .transition-swup-footer {
+        animation: fade-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      html.animation-prepared .transition-swup-main {
+        animation: fade-in 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* 页面过渡动画 */
+      .transition-swup-main {
+        transition: opacity 0.11s cubic-bezier(0.33, 0, 0.66, 0.33);
+        opacity: 1;
+      }
+
+      html.is-animating .transition-swup-main {
+        transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+        opacity: 0;
+      }
+
+      html.is-leaving .transition-swup-main {
+        transition: opacity 0.06s cubic-bezier(0.32, 0, 0.67, 0);
+        opacity: 0;
+      }
+    </style>
   </body>
 </html>
