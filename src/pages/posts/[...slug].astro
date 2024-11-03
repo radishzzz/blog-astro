@@ -1,6 +1,6 @@
 ---
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
-import Comments from '~/components/Comments.astro'
+import Comments from '~/components/Waline.astro'
 import Pagination from '~/components/Pagination.astro'
 import SiteSeo from '~/components/SiteSeo.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
@@ -46,9 +46,8 @@ function getUrl(slug: string) {
     rightTitle={`${t('next_post')}: ${next?.data.title}`}
     rightUrl={getUrl(next?.slug)}
     showPageCount={false}
-  />
-  <!-- BUG 这里使用 client:visible 会导致构建失败。ref: https://github.com/withastro/astro/issues/7329 -->
-  <Comments post={entry} />
+/>
+  <Comments post={entry} class="comments" />
 </LayoutDefault>
 
 <script>
