@@ -11,11 +11,6 @@ if (!themeConfig.comment?.waline) {
   throw new Error('Waline comments are not configured')
 }
 
-const walineConfig = {
-  ...themeConfig.comment.waline,
-  el: '#waline',
-  path
-}
 ---
 
 <div id="waline"></div>
