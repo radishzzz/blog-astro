@@ -32,8 +32,8 @@ export const defaultConfig: ThemeConfig = {
     ],
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
-      'Here\'s <a target="_blank" href="/atom.xml">RSS</a> and <a target="_blank" href="https://views.radishzz.cc/share/mF6auxnITE4rIX0e/radishzz.cc/">Views</a>',
-      'Powered by <a target="_blank" href="https://astro.build/">Astro</a> and <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a>',
+      'Blog <a target="_blank" href="/atom.xml">RSS</a> & <a target="_blank" href="https://views.radishzz.cc/share/mF6auxnITE4rIX0e/radishzz.cc/">Views</a> & <a target="_blank" href="https://status.radishzz.cc/">Status</a>',
+      'Powered by <a target="_blank" href="https://astro.build/">Astro</a> & Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a>',
       '© 2024 - %year %author',
     ],
   },
@@ -44,8 +44,8 @@ export const defaultConfig: ThemeConfig = {
       background: '#ffffff',
     },
     colorsDark: {
-      primary: '#e5e5e5',
-      background: '#1a1a1a',
+      primary: '#dbdbdb',
+      background: '#121212',
     },
     fonts: {
       header:
