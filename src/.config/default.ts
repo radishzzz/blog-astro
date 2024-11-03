@@ -65,7 +65,10 @@ export const defaultConfig: ThemeConfig = {
     waline: {
       serverURL: 'https://comment.radishzz.cc',
       lang: 'zh-CN',
-      emoji: '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+      emoji: [
+        '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        '//unpkg.com/@waline/emojis@1.2.0/tw-emoji',
+      ],
       dark: 'html.dark',
     }
   },
