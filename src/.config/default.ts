@@ -32,7 +32,7 @@ export const defaultConfig: ThemeConfig = {
     ],
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
-      'Blog <a target="_blank" href="/atom.xml">RSS</a> and <a target="_blank" href="https://views.radishzz.cc/share/mF6auxnITE4rIX0e/radishzz.cc">Views</a>',
+      'Here\'s <a target="_blank" href="/atom.xml">RSS</a> and <a target="_blank" href="mailto:radishzz@yandex.com">Email</a>',
       'Powered by <a target="_blank" href="https://astro.build/">Astro</a> and <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a>',
       '© 2024 - %year %author',
     ],
