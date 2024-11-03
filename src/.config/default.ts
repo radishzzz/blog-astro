@@ -5,30 +5,13 @@ import type { ThemeConfig } from '~/types'
 
 export const defaultConfig: ThemeConfig = {
   site: {
-    title: '活版印字',
-    subtitle: 'Typography',
-    author: 'Moeyua',
-    description: 'Rediscory the beauty of typography',
-    website: 'https://astro-theme-typography.vercel.app/',
+    title: 'radishzz',
+    subtitle: '',
+    author: 'radishzz',
+    description: 'Share my thoughts and ideas.',
+    website: 'https://radishzz.cc/',
     pageSize: 5,
-    socialLinks: [
-      {
-        name: 'github',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'rss',
-        href: '/atom.xml',
-      },
-      {
-        name: 'twitter',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-      {
-        name: 'mastodon',
-        href: 'https://github.com/moeyua/astro-theme-typography',
-      },
-    ],
+    socialLinks: [],
     navLinks: [
       {
         name: 'Posts',
@@ -49,20 +32,20 @@ export const defaultConfig: ThemeConfig = {
     ],
     categoryMap: [{ name: '胡适', path: 'hu-shi' }],
     footer: [
-      '© %year <a target="_blank" href="%website">%author</a>',
-      'Theme <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a> by <a target="_blank" href="https://moeyua.com">Moeyua</a>',
-      'Proudly published with <a target="_blank" href="https://astro.build/">Astro</a>',
+      'Blog <a target="_blank" href="/atom.xml">RSS</a> and <a target="_blank" href="https://views.radishzz.cc/share/mF6auxnITE4rIX0e/radishzz.cc">Views</a>',
+      'Powered by <a target="_blank" href="https://astro.build/">Astro</a> and <a target="_blank" href="https://github.com/Moeyua/astro-theme-typography">Typography</a>',
+      '© 2024 - %year %author',
     ],
   },
   appearance: {
     locale: 'zh-cn',
     colorsLight: {
-      primary: '#2e405b',
-      background: '#ffffff',
+      primary: '#121212',
+      background: '#E8EAED',
     },
     colorsDark: {
-      primary: '#FFFFFF',
-      background: '#232222',
+      primary: '#E8EAED',
+      background: '#121212',
     },
     fonts: {
       header:
@@ -71,7 +54,7 @@ export const defaultConfig: ThemeConfig = {
     },
   },
   seo: {
-    twitter: '@moeyua13',
+    twitter: '',
     meta: [],
     link: [],
   },
@@ -83,7 +66,7 @@ export const defaultConfig: ThemeConfig = {
   },
   analytics: {
     googleAnalyticsId: '',
-    umamiAnalyticsId: '',
+    umamiAnalyticsId: '67d360e0-09a8-4cc9-851c-ed26150d0c6b',
   },
   latex: {
     katex: false,
