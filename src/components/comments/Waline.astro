@@ -1,0 +1,70 @@
+---
+import { themeConfig } from '~/.config'
+
+interface Props {
+  path: string
+}
+
+const { path } = Astro.props
+
+if (!themeConfig.comment?.waline) {
+  throw new Error('Waline comments are not configured')
+}
+
+const walineConfig = {
+  ...themeConfig.comment.waline,
+  el: '#waline',
+  path
+}
+---
+
+<div id="waline"></div>
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+/>
+
+<script>
+  import { init } from '@waline/client'
+  
+  init({
+    el: '#waline',
+    serverURL: 'https://comment.radishzz.cc',
+    path: window.location.pathname
+  });
+</script>
+
+<style>
+  /* 亮色主题 */
+  html.animation-prepared {
+    --waline-theme-color: #333333;
+    --waline-text-color: #4a4a4a;
+    --waline-border-color: #e0e0e0;
+    --waline-bg-color: #ffffff;
+    --waline-light-bg-color: #f5f5f5;
+    --waline-info-bg-color: #f8f8f8;
+    --waline-light-text-color: #666666;
+    --waline-input-bg-color: #ffffff;   /* 输入框背景色 */
+  }
+
+  /* 暗色主题 */
+  html.animation-prepared.dark {
+    --waline-theme-color: #e5e5e5;
+    --waline-text-color: #e5e5e5;
+    --waline-border-color: #333333;
+    --waline-bg-color: #1a1a1a;
+    --waline-light-bg-color: #242424;
+    --waline-info-bg-color: #242424;
+    --waline-light-text-color: #aaaaaa;
+    --waline-input-bg-color: #1a1a1a;   /* 暗色模式下的输入框背景色 */
+  }
+
+  #waline {
+    width: 100%;
+    max-width: 66.5ch;
+    margin: 0 auto;
+    padding: 0rem 0;
+    margin-left: -1ch;
+  }
+</style>

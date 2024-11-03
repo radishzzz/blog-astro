@@ -62,7 +62,12 @@ export const defaultConfig: ThemeConfig = {
     fullText: true,
   },
   comment: {
-    // disqus: { shortname: "typography-astro" },
+    waline: {
+      serverUrl: 'https://comment.radishzz.cc',
+      lang: 'zh-CN',
+      emoji: '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+      reaction: false
+    }
   },
   analytics: {
     googleAnalyticsId: '',
