@@ -40,12 +40,12 @@ export const defaultConfig: ThemeConfig = {
   appearance: {
     locale: 'zh-cn',
     colorsLight: {
-      primary: '#121212',
-      background: '#E8EAED',
+      primary: '#ffffff',
+      background: '#333333',
     },
     colorsDark: {
-      primary: '#E8EAED',
-      background: '#121212',
+      primary: '#1a1a1a',
+      background: '#e5e5e5',
     },
     fonts: {
       header:
