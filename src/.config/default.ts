@@ -66,6 +66,7 @@ export const defaultConfig: ThemeConfig = {
       serverURL: 'https://comment.radishzz.cc',
       lang: 'zh-CN',
       emoji: '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+      dark: 'html.dark',
     }
   },
   analytics: {
