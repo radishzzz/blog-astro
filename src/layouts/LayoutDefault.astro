@@ -10,7 +10,7 @@ import '~/styles/global.css'
 const lang = themeConfig.appearance.locale ?? 'en-us'
 ---
 
-<html lang={lang} class="animation-prepared">
+<html lang={lang}>
   <head>
     <slot name="seo"> <SiteSeo /> </slot>
     <Analytics />
@@ -31,7 +31,7 @@ const lang = themeConfig.appearance.locale ?? 'en-us'
     md="grid gap-x-6 cols-[3fr_1fr] rows-[1fr_9rem]"
   >
     <header
-      class="transition-swup-header flex flex-col gap-2.5"
+      class="flex flex-col gap-2.5"
       m="7.5 md:(x-0 t-20 b-4)"
       md="row-1-2 col-2-3 justify-between items-start"
     >
@@ -39,49 +39,18 @@ const lang = themeConfig.appearance.locale ?? 'en-us'
       <SiteNavigation />
     </header>
 
-    <main class="transition-swup-main overflow-y-scroll scrollbar-hide outline-none" md="row-1-3 col-1-2 py-20 ">
+    <main 
+      class="overflow-y-scroll scrollbar-hide outline-none" 
+      md="row-1-3 col-1-2 py-20"
+    >
       <slot />
     </main>
 
-    <footer class="transition-swup-footer py-7.5" md="row-2-3 col-2-3">
+    <footer 
+      class="py-7.5" 
+      md="row-2-3 col-2-3"
+    >
       <SiteFooter />
     </footer>
-
-    <script>
-      document.addEventListener('animationend', removeAnimation, false)
-      function removeAnimation() {
-        document.documentElement.classList.remove('animation-prepared')
-        document.removeEventListener('animationend', removeAnimation, false)
-      }
-    </script>
-
-    <style>
-      /* 页面首次加载动画 */
-      html.animation-prepared .transition-swup-header,
-      html.animation-prepared .transition-swup-footer,
-      html.animation-prepared .transition-swup-main {
-        animation: fade-in 0.16s ease-out;
-      }
-
-      @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      /* 页面过渡动画 */
-      .transition-swup-main {
-        transition: opacity 0.16s ease-out;
-        opacity: 1;
-      }
-
-      html.is-leaving .transition-swup-main {
-        transition-duration: 0.08s;
-        opacity: 0;
-      }
-    </style>
   </body>
 </html>
