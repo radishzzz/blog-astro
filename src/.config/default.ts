@@ -6,7 +6,7 @@ import type { ThemeConfig } from '~/types'
 export const defaultConfig: ThemeConfig = {
   site: {
     title: 'radishzz',
-    subtitle: '走走停停',
+    subtitle: '',
     author: 'radishzz',
     description: 'Share technology and life',
     website: 'https://radishzz.cc/',
