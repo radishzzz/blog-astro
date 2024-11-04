@@ -8,7 +8,7 @@ export const defaultConfig: ThemeConfig = {
     title: 'radishzz',
     subtitle: '走走停停',
     author: 'radishzz',
-    description: 'Walk and pause',
+    description: 'Share technology and life',
     website: 'https://radishzz.cc/',
     pageSize: 5,
     socialLinks: [],
