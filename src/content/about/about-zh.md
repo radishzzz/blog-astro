@@ -2,4 +2,12 @@
 lang: zh
 ---
 
-Retypeset 是一款基于 [Astro](https://astro.build/) 框架的静态博客主题，中文名为重新编排。本主题以 [活版印字](https://astro-theme-typography.vercel.app/) 为设计灵感，通过建立全新的视觉规范，对所有页面进行重新编排，打造纸质书页般的阅读体验，再现版式之美。所见皆为细节，方寸尽显优雅。
+![_没关系，又活了一天，已经很厉害啦](./20230406.jpg)
+
+---
+
+## 友情链接
+
+- [信也のブログ](https://shinya.click/): 一写代码的
+- [天一生水](https://www.jiangyu.org/)：一蓑烟雨任平生
+- [duanluan](https://blog.zhjh.top/)：书山有路勤为径，学海无涯苦作舟

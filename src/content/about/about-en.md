@@ -2,4 +2,12 @@
 lang: en
 ---
 
-Retypeset is a static blog theme based on the [Astro](https://astro.build/) framework. Inspired by [Typography](https://astro-theme-typography.vercel.app/), Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.
+![_没关系，又活了一天，已经很厉害啦](./20230406.jpg)
+
+---
+
+## Blogroll
+
+- [信也のブログ](https://shinya.click/): 一写代码的
+- [天一生水](https://www.jiangyu.org/)：一蓑烟雨任平生
+- [duanluan](https://blog.zhjh.top/)：书山有路勤为径，学海无涯苦作舟
