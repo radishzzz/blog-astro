@@ -64,7 +64,7 @@ export const themeConfig: ThemeConfig = {
     // date format for posts
     dateFormat: 'YYYY-MM-DD', // YYYY-MM-DD, MM-DD-YYYY, DD-MM-YYYY, MONTH DAY YYYY, DAY MONTH YYYY
     // table of contents for posts
-    toc: true, // true, false
+    toc: false, // true, false
     // KaTeX math rendering
     katex: false, // true, false
     // reduce motion
