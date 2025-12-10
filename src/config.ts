@@ -4,23 +4,23 @@ export const themeConfig: ThemeConfig = {
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> START
   site: {
     // site title
-    title: 'Retypeset',
+    title: 'radishzz',
     // site subtitle
-    subtitle: 'Revive the beauty of typography',
+    subtitle: '已经很厉害啦',
     // site description
-    description: 'Retypeset is a static blog theme based on the Astro framework. Inspired by Typography, Retypeset establishes a new visual standard and reimagines the layout of all pages, creating a reading experience reminiscent of paper books, reviving the beauty of typography. Details in every sight, elegance in every space.',
+    description: '分享些有的没的',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: true, // true | false
     // author name
     author: 'radishzz',
     // site url
-    url: 'https://retypeset.radishzz.cc',
+    url: 'https://radishzz.cc',
     // base path
     // root directory for all pages and assets
     base: '/', // e.g., '/blog', '/docs'
     // favicon url
     // recommended formats: svg, png or ico
-    favicon: '/icons/favicon.svg', // or https://example.com/favicon.svg
+    favicon: 'https://image.radishzz.cc/image/avatar-round.webp', // or https://example.com/favicon.svg
   },
   // SITE INFORMATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -40,7 +40,7 @@ export const themeConfig: ThemeConfig = {
       background: 'oklch(96% 0.005 298)',
       // highlight color
       // used for navbar, selected text, etc
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.5)', // rgba(255,235,0,0.5)
+      highlight: 'oklch(0.8357 0.1153 203.57 / 0.5)', // rgba(255,235,0,0.5)
     },
     dark: {
       // primary color
@@ -50,7 +50,7 @@ export const themeConfig: ThemeConfig = {
       // background color
       background: 'oklch(22% 0.005 298)',
       // highlight color
-      highlight: 'oklch(0.93 0.195089 103.2532 / 0.2)', // rgba(255,235,0,0.2)
+      highlight: 'oklch(0.8357 0.1153 203.57 / 0.2)', // rgba(255,235,0,0.2)
     },
   },
   // COLOR SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
@@ -61,7 +61,7 @@ export const themeConfig: ThemeConfig = {
     locale: 'zh', // de | en | es | fr | ja | ko | pl | pt | ru | zh | zh-tw
     // more languages
     // not fill in the locale code above again, can be an empty array []
-    moreLocales: ['en', 'es', 'ja', 'ru', 'zh-tw'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
+    moreLocales: ['en'], // ['de', 'en', 'es', 'fr', 'ja', 'ko', 'pl', 'pt', 'ru', 'zh', 'zh-tw']
     // post font style
     fontStyle: 'sans', // sans | serif
     // post date format
@@ -69,7 +69,7 @@ export const themeConfig: ThemeConfig = {
     // enable table of contents
     toc: true, // true | false
     // enable katex math rendering
-    katex: true, // true | false
+    katex: false, // true | false
     // reduce motion
     reduceMotion: false, // true | false
   },
@@ -102,7 +102,7 @@ export const themeConfig: ThemeConfig = {
     // https://waline.js.org/en/
     waline: {
       // server url
-      serverURL: 'https://retypeset-comment.radishzz.cc',
+      serverURL: 'https://comment.radishzz.cc',
       // emoji url
       emoji: [
         'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji',
@@ -125,10 +125,10 @@ export const themeConfig: ThemeConfig = {
     verification: {
       // google search console
       // https://search.google.com/search-console
-      google: 'AUCrz5F1e5qbnmKKDXl2Sf8u6y0kOpEO1wLs6HMMmlM',
+      google: '',
       // bing webmaster tools
       // https://www.bing.com/webmasters
-      bing: '64708CD514011A7965C84DDE1D169F87',
+      bing: '',
       // yandex webmaster
       // https://webmaster.yandex.com
       yandex: '',
@@ -141,7 +141,7 @@ export const themeConfig: ThemeConfig = {
     googleAnalyticsID: '',
     // umami analytics
     // https://cloud.umami.is
-    umamiAnalyticsID: 'dab0e4b9-9cbf-43c3-af60-b09d3b545c38',
+    umamiAnalyticsID: '',
     // follow verification
     // https://follow.is/
     follow: {
@@ -167,11 +167,11 @@ export const themeConfig: ThemeConfig = {
       },
       {
         name: 'GitHub',
-        url: 'https://github.com/radishzzz/astro-theme-retypeset',
+        url: 'https://github.com/radishzzz/',
       },
       {
-        name: 'Email',
-        url: 'email@radishzz.cc',
+        name: 'Telegram',
+        url: 'https://t.me/radishzz',
       },
       // {
       //   name: 'X',
@@ -179,7 +179,7 @@ export const themeConfig: ThemeConfig = {
       // },
     ],
     // year of website start
-    startYear: 2025,
+    startYear: 2024,
   },
   // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
@@ -195,7 +195,7 @@ export const themeConfig: ThemeConfig = {
     // custom umami analytics js
     // for users who self-deploy umami or proxy tracking scripts to a custom domain
     // see https://umami.is/docs/bypass-ad-blockers
-    customUmamiAnalyticsJS: 'https://views.radishzz.cc/script.js',
+    customUmamiAnalyticsJS: '',
   },
   // PRELOAD SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 }
