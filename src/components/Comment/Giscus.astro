@@ -51,7 +51,7 @@ let giscusContainer: HTMLElement | null = null
 
 function getThemeUrl(base: string) {
   const isDark = document.documentElement.classList.contains('dark')
-  const origin = window.location.origin
+  const origin = 'https://retypeset.radishzz.cc'
 
   return isDark
     ? `${origin}${base}/giscus/theme-dark.css`
