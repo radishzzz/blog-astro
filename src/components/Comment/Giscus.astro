@@ -49,13 +49,12 @@ const giscusConfig = {
 <script>
 let giscusContainer: HTMLElement | null = null
 
-function getThemeUrl(base: string) {
+function getThemeUrl(_base: string) {
   const isDark = document.documentElement.classList.contains('dark')
-  const origin = 'https://retypeset.radishzz.cc'
 
   return isDark
-    ? `${origin}${base}/giscus/theme-dark.css`
-    : `${origin}${base}/giscus/theme-light.css`
+    ? `https://raw.githubusercontent.com/radishzzz/astro-theme-retypeset/refs/heads/master/public/giscus/theme-dark.css`
+    : `https://raw.githubusercontent.com/radishzzz/astro-theme-retypeset/refs/heads/master/public/giscus/theme-light.css`
 }
 
 function updateGiscusTheme() {
